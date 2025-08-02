@@ -10,9 +10,7 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
 - 💾 Export PDF summaries of current page or full article list
 - 📥 Download structured, clean, and readable daily reports
 
-## 📸 Screenshots
 
-> Coming soon: Add screenshots or screen recordings to showcase UI and functionality.
 
 ---
 
@@ -37,7 +35,7 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/daily-news-summarizer.git
+git clone https://github.com/Adamderbel/daily-news-summarizer.git
 cd daily-news-summarizer
 ```
 
@@ -122,21 +120,10 @@ pip install -r requirements.txt
 
 ---
 
-## ✅ To-Do / Future Enhancements
 
-* [ ] Add screenshot previews
-* [ ] Add topic suggestions or trending tags
-* [ ] Add clustering of articles into themes
-* [ ] Add support for multiple LLM models
-* [ ] Allow multilingual news summarization
 
 ---
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
 
 ## 🙌 Acknowledgements
 
