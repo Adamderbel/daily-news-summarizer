@@ -5,7 +5,7 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
 ## 🚀 Features
 
 - 🔎 Search and summarize news on any topic (e.g., technology, politics, sports)
-- 🤖 Generate a concise daily summary using a local LLM (e.g., Mistral via Ollama)
+- 🤖 Generate a concise daily summary using a local LLM (Mistral via Ollama)
 - 📄 View paginated article results with summaries and links
 - 💾 Export PDF summaries of current page or full article list
 - 📥 Download structured, clean, and readable daily reports
