@@ -20,19 +20,30 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
    Uses the [NewsAPI](https://newsapi.org/) to fetch recent articles on a selected topic.
 
 2. **Summarization**  
-   Generates a concise summary of the top 20 article descriptions using the `ollama` CLI with a local model (default: `mistral`).
+   - Generates a concise summary of the top 20 article descriptions using the `ollama` CLI with a local model (default: `mistral`).
+   - Generates paginated article results with summaries and links
 
-3. **PDF Generation**  
+4. **PDF Generation**  
    Generates downloadable reports using `FPDF`, including:
    - Date and topic
    - Generated summary
    - A list of articles with links
 
 ---
+## 📂 Project Structure
+
+```
+.
+├── news.py                # Main Streamlit app
+├── requirements.txt      # Required Python packages
+└── README.md             # You're here!
+```
+---
 
 ## 🖥️ Setup Instructions
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Adamderbel/daily-news-summarizer.git
 cd daily-news-summarizer
@@ -46,20 +57,22 @@ pip install -r requirements.txt
 ```
 
 ### 3. Set Up Ollama
+
 1. Install [Ollama](https://ollama.com/download) (supports Linux, macOS, Windows).
 2. Start the Ollama server:
+
    ```bash
    ollama serve
    ```
-3. Pull and run the Mistral model (or any Ollama-supported model):
+3. Pull the Mistral model (or another supported model):
+
    ```bash
    ollama pull mistral
-   ollama run mistral
    ```
 
-### 4. Set Your NewsAPI Key
+### 4. Configure NewsAPI Key
 
-Open the script and replace this line with your own API key:
+Open **`news.py`** and replace the placeholder with your own API key:
 
 ```python
 NEWS_API_KEY = "your_news_api_key_here"
@@ -67,27 +80,21 @@ NEWS_API_KEY = "your_news_api_key_here"
 
 > Get your API key from [https://newsapi.org](https://newsapi.org)
 
-```
 ### 5. Run the App
+
 ```bash
 streamlit run news.py
 ```
----
 
 ---
 
-## 📂 Project Structure
 
-```
-.
-├── app.py                # Main Streamlit app
-├── requirements.txt      # Required Python packages
-└── README.md             # You're here!
-```
-
-
+## 💻 System Requirements
+- Python 3.8+
+- 4GB+ RAM (8GB recommended for FAISS and Ollama)
+- Ollama server (Linux, macOS, or Windows)
+- Internet connection for scraping and model downloads
 ---
-
 
 ## 🙌 Acknowledgements
 
