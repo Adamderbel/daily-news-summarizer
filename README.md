@@ -30,27 +30,32 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
 
 ---
 
-## 🛠️ Installation
+## 🖥️ Setup Instructions
 
 ### 1. Clone the Repository
-
 ```bash
 git clone https://github.com/Adamderbel/daily-news-summarizer.git
 cd daily-news-summarizer
 ```
 
-### 2. Create a Virtual Environment (optional but recommended)
-
+### 2. Install Dependencies
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-### 3. Install Requirements
-
-```bash
 pip install -r requirements.txt
 ```
+
+### 3. Set Up Ollama
+1. Install [Ollama](https://ollama.com/download) (supports Linux, macOS, Windows).
+2. Start the Ollama server:
+   ```bash
+   ollama serve
+   ```
+3. Pull and run the Mistral model (or any Ollama-supported model):
+   ```bash
+   ollama pull mistral
+   ollama run mistral
+   ```
 
 ### 4. Set Your NewsAPI Key
 
@@ -62,33 +67,12 @@ NEWS_API_KEY = "your_news_api_key_here"
 
 > Get your API key from [https://newsapi.org](https://newsapi.org)
 
----
-
-## 🤖 Ollama Setup (LLM Summarization)
-
-This app uses a local LLM (like Mistral) via [Ollama](https://ollama.com/).
-
-### 1. Install Ollama
-
-Follow the instructions from: [https://ollama.com/download](https://ollama.com/download)
-
-### 2. Pull the model you want to use (e.g., mistral)
-
-```bash
-ollama pull mistral
 ```
-
-### 3. Ensure Ollama is running locally
-
-> Ollama must be running in the background for the summarization to work.
-
----
-
-## 🧪 Run the App
-
+### 5. Run the App
 ```bash
-streamlit run app.py
+streamlit run news.py
 ```
+---
 
 ---
 
@@ -100,26 +84,6 @@ streamlit run app.py
 ├── requirements.txt      # Required Python packages
 └── README.md             # You're here!
 ```
-
----
-
-## 📦 Requirements
-
-* Python 3.8+
-* `streamlit`
-* `requests`
-* `fpdf`
-* `subprocess` (standard library)
-* `datetime` (standard library)
-
-Install dependencies with:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
 
 
 ---
