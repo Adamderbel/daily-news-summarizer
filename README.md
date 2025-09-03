@@ -2,6 +2,8 @@
 
 A Streamlit-powered web application that fetches the latest news on a chosen topic, summarizes it using a local LLM (via Ollama), and provides both article previews and downloadable PDF summaries.
 
+---
+
 ## 🚀 Features
 
 - 🔎 Search and summarize news on any topic (e.g., technology, politics, sports)
@@ -9,11 +11,13 @@ A Streamlit-powered web application that fetches the latest news on a chosen top
 - 📄 View paginated article results with summaries and links
 - 💾 Export PDF summaries of current page or full article list
 - 📥 Download structured, clean, and readable daily reports
+---
+## 📸 Screenshot
 
 
+![Streamlit UI](screenshots/Demo1.png)
 
 ---
-
 ## 🧠 How It Works
 
 1. **News Fetching**  
