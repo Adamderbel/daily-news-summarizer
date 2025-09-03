@@ -52,7 +52,7 @@ def create_pdf(topic, summary, articles):
     
     return pdf.output(dest='S').encode('latin1')
 # ------------------------- News API Functions -------------------------
-NEWS_API_KEY = ""  # Replace with your key
+NEWS_API_KEY = "0377ec60e3514d4da759a263a15f2fd2"  # Replace with your key
 
 def fetch_news(topic, page_size=30):
     url = (
