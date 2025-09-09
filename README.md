@@ -1,7 +1,7 @@
 # 📰 Daily News Summarizer
 
-A Streamlit-powered web application that fetches the latest news on a chosen topic, summarizes it using a local LLM (via Ollama), and provides both article previews and downloadable PDF summaries.
-
+A Streamlit powered web application that fetches the latest news on a chosen topic, summarizes it using a local LLM (via Ollama), and provides both article previews and downloadable PDF summaries.
+> 🔗 *Demo:* [Daily News Summarizer](https://adamderbel.github.io/Adam-Portfolio/news-summarizer.html)
 ---
 
 ## 🚀 Features
@@ -100,9 +100,3 @@ streamlit run news.py
 - Internet connection for scraping and model downloads
 ---
 
-## 🙌 Acknowledgements
-
-* [Streamlit](https://streamlit.io)
-* [NewsAPI](https://newsapi.org)
-* [Ollama](https://ollama.com)
-* [FPDF](https://pyfpdf.readthedocs.io/)
