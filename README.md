@@ -98,5 +98,9 @@ streamlit run news.py
 - 4GB+ RAM (8GB recommended for FAISS and Ollama)
 - Ollama server (Linux, macOS, or Windows)
 - Internet connection for scraping and model downloads
----
 
+## 🛠️ Troubleshooting
+- **Ollama not running**: Start with `ollama serve`.
+- **Model not found**: Run `ollama pull mistral`.
+- **Data not found**: Make sure you have the correct  `News api key`.
+---
